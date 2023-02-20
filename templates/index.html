@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer proyecto ML!</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <navbar class="nav">
+        <a href="/">Home</a>
+        <a href="#">Dudas</a>
+    </navbar>
+</head>
+<body>
+    <h1>Bienvenido al predictor de precios de casas</h1>
+    <p>Predice el precio de las casas</p>
+    <div class="caja">
+        <form action="{{url_for('predecir')}}" method="post">
+            <input type="text" name="cuartos" placeholder="# Rooms" required="required">
+            <input type="text" name="distancia" placeholder="Distance in km²" required="required">
+            <button type="submit">Calculate</button>
+        </form>
+    </div>
+
+    <br>
+    <br>
+    <p>{{ prediccion_texto }}</p>
+</body>
+</html>
