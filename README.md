@@ -1,3 +1,4 @@
-# Predictor-Precios-Casas
+# Home-Price-Predictor
 
-Hola!, prueba este predictor del precio de las casas probando con diferentes números de habitaciones y área de la casa 😄🏡📈
+Hi, try this and see what happens 👀
+Test price modifying the number of rooms and area of the house 🏡📈
