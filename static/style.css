@@ -1,5 +1,10 @@
 body {
-    background-color: pink;
+    background: linear-gradient(190deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    color: white;
 }
 
 .nav {
@@ -7,7 +12,7 @@ body {
 }
 
 .nav a{
-    color: black;
+    color: white;
     text-decoration: none;
     padding: 10px;
 }
@@ -23,7 +28,7 @@ p {
 }
 
 button {
-    background-color: rgb(250, 235, 238);
+    background-color: rgb(253, 238, 210);
     border: 1px black;
     border-radius: 10px;
 }
@@ -37,7 +42,7 @@ button:hover{
 }
 
 .caja form input {
-    background-color: rgb(253, 224, 229);
+    background-color: rgb(253, 227, 210);
     border-radius: 20px;
     border: 5px; 
     text-align: center;

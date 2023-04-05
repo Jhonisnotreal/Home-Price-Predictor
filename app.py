@@ -14,7 +14,7 @@ def index():
 def predecir():
     rooms = int(request.form['rooms'])
     distance = int(request.form['distance'])
-    prediction = model.predict([[rooms, distancia]])
+    prediction = model.predict([[rooms, distance]])
     output = round(prediction[0], 2)
 
     return render_template('index.html', text_prediction=f'The house with {rooms} rooms and located at {distance} km² has a value of ${output}K dollars')
