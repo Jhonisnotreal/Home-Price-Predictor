@@ -12,12 +12,12 @@ def index():
 
 @app.route('/predecir', methods=['POST'])
 def predecir():
-    cuartos = int(request.form['cuartos'])
-    distancia = int(request.form['distancia'])
-    prediccion = model.predict([[cuartos, distancia]])
-    output = round(prediccion[0], 2)
+    rooms = int(request.form['rooms'])
+    distance = int(request.form['distance'])
+    prediction = model.predict([[rooms, distancia]])
+    output = round(prediction[0], 2)
 
-    return render_template('index.html', prediccion_texto=f'La casa con {cuartos} cuartos y localizado a {distancia} km² tiene un valor de ${output}K')
+    return render_template('index.html', prediction_text=f'The house with {rooms} rooms and located at {distance} km² has a value of ${output}K dollars')
 
 if __name__=='__main__':
     app.run(debug=True)
