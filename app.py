@@ -17,7 +17,7 @@ def predecir():
     prediction = model.predict([[rooms, distancia]])
     output = round(prediction[0], 2)
 
-    return render_template('index.html', prediction_text=f'The house with {rooms} rooms and located at {distance} km² has a value of ${output}K dollars')
+    return render_template('index.html', text_prediction=f'The house with {rooms} rooms and located at {distance} km² has a value of ${output}K dollars')
 
 if __name__=='__main__':
     app.run(debug=True)
